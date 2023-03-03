@@ -1,0 +1,81 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textStyle="bold"
+            android:id="@+id/usuario"
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:textSize="28sp"
+            android:hint="usuario"/>
+
+        <EditText
+            android:id="@+id/contraseña"
+            android:layout_below="@+id/usuario"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:hint="contraseña"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="80px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="19px"
+            android:layout_marginRight="19px"
+            android:layout_marginBottom="19px"
+            android:textStyle="bold"
+            android:id="@+id/bt1"
+            android:layout_width="162dp"
+            android:layout_height="62dp"
+            android:text="modificar"
+            android:background="@drawable/modificar"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="162dp"
+            android:layout_height="62dp"
+            android:layout_margin="19px"
+            android:text="agregar"
+            android:background="@drawable/agregar"
+            android:padding="16px"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="162dp"
+            android:layout_height="62dp"
+            android:layout_margin="19px"
+            android:padding="16px"
+
+            android:textStyle="bold"
+            android:text="eliminar"
+            android:background="@drawable/eliminar"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

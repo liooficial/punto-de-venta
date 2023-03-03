@@ -1,0 +1,109 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log"
+    >
+
+    <TextView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/espiritu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerInParent="true"
+        android:text="Licores"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/usuarior"
+        android:layout_below="@+id/txt"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="14dp"
+        android:background="@drawable/redondeado">
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="wrap_content"
+            android:layout_margin="25px"
+            android:layout_height="wrap_content"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:hint="   usuario   ">
+        </EditText>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/usuario" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/contraseñar"
+        android:layout_below="@+id/usuarior"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="14dp"
+        android:background="@drawable/redondeado">
+
+        <EditText
+            android:id="@+id/contraseña"
+            android:layout_width="wrap_content"
+            android:layout_margin="25px"
+            android:layout_height="wrap_content"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:hint="contraseña"
+            >
+        </EditText>
+        <ImageView
+            android:layout_margin="8dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/candado"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/inicioo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iniciar sesion"
+        android:padding="14px"
+        android:layout_below="@+id/contraseñar"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:background="@drawable/btr"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        >
+    </Button>
+    <TextView
+        android:id="@+id/mensajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14px"
+        android:textColor="@color/black"
+        android:layout_below="@+id/inicioo"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        >
+    </TextView>
+
+
+</RelativeLayout>

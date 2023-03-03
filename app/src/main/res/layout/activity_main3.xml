@@ -1,0 +1,158 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/app"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:layout_marginTop="16px"
+            android:layout_marginLeft="20px"
+            android:text="id.producto"/>
+        <TextView
+            android:id="@+id/id2"
+            android:layout_toRightOf="@+id/id1"
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="    "
+            android:textSize="26sp" />
+        <Button
+            android:id="@+id/btscaner"
+            android:layout_toRightOf="@+id/id2"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/buscar"
+            android:layout_height="wrap_content"
+            android:hint="s"
+            android:textSize="26sp" />
+        <TextView
+            android:id="@+id/n1"
+            android:layout_below="@+id/id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80px"
+            android:layout_marginLeft="20px"
+            android:textSize="26sp"
+            android:text="Nombre del producto"/>
+        <EditText
+            android:id="@+id/n2"
+            android:layout_below="@+id/n1"
+            android:layout_marginTop="80px"
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:hint="Nombre del producto"/>
+        <TextView
+            android:id="@+id/d1"
+            android:layout_below="@+id/n2"
+            android:layout_marginTop="180px"
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="Descripcion"/>
+        <EditText
+            android:id="@+id/d2"
+            android:layout_toRightOf="@+id/d1"
+            android:layout_alignBaseline="@+id/d1"
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:hint="Descripcion"/>
+        <TextView
+            android:id="@+id/c1"
+            android:layout_marginTop="80px"
+            android:layout_below="@+id/d1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textSize="26sp"
+            android:text="Cantidad"/>
+        <EditText
+            android:id="@+id/c2"
+            android:layout_toRightOf="@+id/c1"
+            android:layout_alignBaseline="@+id/c1"
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:hint="Cantidad"/>
+
+        <TextView
+            android:id="@+id/precio_v1"
+            android:layout_marginTop="80px"
+            android:layout_below="@+id/c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textSize="26sp"
+            android:text="precio"/>
+        <EditText
+            android:id="@+id/precio_v2"
+            android:layout_toRightOf="@+id/precio_v1"
+            android:layout_alignBaseline="@+id/precio_v1"
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:hint="precio"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="80px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="19px"
+            android:text="buscar"
+            android:padding="25px"
+            android:background="@drawable/buscar"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="19px"
+            android:text="agregar"
+            android:padding="25px"
+            android:background="@drawable/agregar"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="19px"
+            android:padding="25px"
+            android:text="eliminar"
+            android:background="@drawable/eliminar"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="80px"
+        android:id="@+id/bt4"
+        android:background="@drawable/modificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="modificar"/>
+
+</LinearLayout>
