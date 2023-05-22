@@ -1,0 +1,104 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <TextView
+
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/logo1"
+        android:textColor="@color/white"
+        android:text="Hugo\nBoss"
+        android:textSize="85dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="80dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:id="@+id/usuarior"
+        android:layout_toRightOf="@+id/txt"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/redondeado">
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="wrap_content"
+            android:layout_margin="25px"
+            android:layout_height="90dp"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:hint="   usuario   ">
+        </EditText>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/usuario" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contraseñar"
+        android:layout_below="@+id/usuarior"
+        android:layout_width="350dp"
+
+        android:layout_toRightOf="@+id/txt"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/redondeado">
+
+        <EditText
+            android:id="@+id/contraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:hint="contraseña"
+            android:textColor="@color/black"
+            android:textSize="45dp"
+            android:textStyle="bold"></EditText>
+
+        <ImageView
+            android:layout_margin="8dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/candado"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/inicioo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iniciar sesion"
+        android:padding="14px"
+        android:layout_below="@+id/contraseñar"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/redondeado"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+    >
+    </Button>
+    </RelativeLayout></ScrollView>
+</RelativeLayout>
