@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644273741576",
+    "project_id": "control-20ed9",
+    "storage_bucket": "control-20ed9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644273741576:android:151653d426c6d26d5bd6bd",
+        "android_client_info": {
+          "package_name": "com.example.controldomstico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644273741576-vsghlqhr6a5uoiijhoba1jbtaten1a0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNRO1ibZhWEoezGahYKHnFtbRDL3Y4h18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644273741576-vsghlqhr6a5uoiijhoba1jbtaten1a0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
